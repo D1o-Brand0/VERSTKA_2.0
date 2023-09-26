@@ -1,0 +1,63 @@
+@import '../footer-contact/footer-contact'
+@import '../footer-social/footer-social'
+@import '../footer-information/footer-information'
+
+
+
+body
+    font-family: 'Gilroy'
+
+.line
+    border-top: 1px solid #D4DEE1      
+
+@media screen and (min-width: $mwidth2 - 1px) and (max-width: $mwidth3)
+    .tablet-content
+        display: contents
+    
+
+@media screen and (max-width: $mwidth2 - 1px)
+    .mobile-hide
+        display: none
+    .line
+        display: none
+
+@media screen and (min-width: $mwidth3)
+    .desktop-hide
+        display: none
+
+@media screen and (max-width: $mwidth3)
+   .footer-contact-button__text_desktop
+       display: none
+
+@media screen and (min-width: $mwidth1) and (max-width: $mwidth3)
+    .footer
+        background-color: #F0F4F5
+        
+@media screen and (min-width: $mwidth3)
+    .footer
+        background-color: #F0F4F5
+
+@media screen and (min-width: $mwidth2 - 1px)
+    .footer-contact
+        background-color: #fff
+
+
+@media screen and (min-width: $mwidth3)
+    .footer-contact
+        padding: 0 
+        background-color:#f8fafa
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
