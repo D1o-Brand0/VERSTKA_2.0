@@ -1,20 +1,19 @@
 
    
-.container-swiper
+.offers
     margin: 0 auto
     padding: 0 $co1
     .slider-top
         display: none
 
-.swiper
-    .swiper_title
+    .offers__title
         font-size: 24px
         font-weight: 800
         line-height: 29px
         letter-spacing: 0em
         text-align: left
         padding-bottom: 30px
-
+.swiper
     .swiper-slide
         display: flex
         flex-direction: column
@@ -24,16 +23,15 @@
         box-shadow: 0px 4px 4px 0px #00000014
         margin: auto
         box-sizing: border-box
-        img
-            width: 100%
-            height: 240px
-            padding-bottom: 24px
-            box-sizing: border-box
+    .picture
+        width: 100%
+        height: 240px
+        box-sizing: border-box
         &.desktop
             display: none
 
     .swiper-slide-desc
-        padding-left: 25px
+        padding: 23px 26px 24px 24px
 
     .swiper-slide-desc__subtitle
         font-size: 14px
@@ -87,7 +85,7 @@
         letter-spacing: 0.03em
         text-align: left
         color: #16161666
-        padding-bottom: 17px
+        padding: 0 15px 17px 0
         &.desktop
             display: none
 
@@ -120,7 +118,7 @@
 
 
 @media screen and (min-width: $mwidth2)
-    .container-swiper
+    .offers
         margin-left: $co2
         padding: 0
 
@@ -130,12 +128,34 @@
                 margin-bottom: 50px
                 
             .swiper-slide__discount
-                display: inline
                 position: absolute
-                left: 208px
-                top: -8px
+                top: 0
+                right: 0
+                width: 70px
+                height: 60px
+                box-shadow: 2px 2px 10px 0px #FFB8004D
+                border-radius: 0px 6px 0px 30px
+                background: #FFB800
+                .sale
+                    padding: 12px 12px 0 14px
+                    display: block
+                    color:#fff
+                    font-size: 12px
+                    line-height: 16px
+                    font-weight: 600
+                    letter-spacing: 0.05em
+                    text-align: right
+                    .percentage
+                        font-size: 16px
+                        line-height: 16px
+                        letter-spacing: 0.05em
+                        width: 29px
+                        height: 16px
+
                 &.desktop-16
                     display: none
+                &.tablet-10
+                    display: block
     
     
             .swiper-slide__discount-tablet::before   
@@ -144,11 +164,11 @@
             
             .swiper-slide
                 width: 288px !important
-                border-radius: 6px, 6px, 0px, 0px
-                img
-                    width: 100%
-                    height: 100%
-                    box-sizing: content-box
+                border-radius: 6px 6px 0 0
+            .picture
+                width: 100%
+                height: 100%
+                box-sizing: content-box
     
             .swiper-pagination
                 display: flex
@@ -165,12 +185,14 @@
     
         .swiper-slide-desc-block
             display: flex
-            justify-content: space-between 
+            justify-content: space-between
+            margin: 0 5px 
     
             .swiper-slide-desc-price
                 flex-direction: column 
                 align-items: flex-start
                 padding-bottom: 16px
+                margin: 0 -5px 
                 &:last-child
                     padding: 0
     
@@ -178,6 +200,7 @@
             .swiper-slide-desc-price__text
                 padding-bottom: 2px
                 position: relative
+    
         
             .swiper-slide-desc-price__text::before 
                 content: '' 
@@ -207,10 +230,16 @@
 
 @media screen and (min-width: $mwidth3)
 
-    .container-swiper
+    .offers
         max-width: $mwidth3
         margin: 0 auto
         padding: 0 $co1
+        .offers__title
+            font-size: 36px
+            font-weight: 800
+            line-height: 43px
+            letter-spacing: 0.02em
+            padding-bottom: 40p
 
         .slider-top
             display: flex
@@ -242,13 +271,6 @@
             .navig
                 display: inline
 
-            .swiper_title
-                font-size: 36px
-                font-weight: 800
-                line-height: 43px
-                letter-spacing: 0.02em
-                padding-bottom: 40px
-
 
             .swiper-pagination
                 display: none
@@ -257,6 +279,7 @@
                 .swiper-slide:hover
                     background:#FFB800
                     color: #FFFFFF
+                    transition: 0.3s
                           
 
             .swiper-slide

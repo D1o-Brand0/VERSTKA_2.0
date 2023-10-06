@@ -26,7 +26,8 @@
     flex-direction: column
     margin-bottom: 43px
     align-items: center
-    a
+    button
+        font-family: Gilroy
         margin-bottom: 30px 
         color: #7D8C93
         background: #FFFFFF
@@ -73,7 +74,7 @@
         flex-direction: row
         margin: 0
         align-items: center
-        & a
+        & button
             font-size: 16px
             font-weight: 500
             line-height: 19px
@@ -115,19 +116,28 @@
         color: #9FA6A9
 
     .footer-contact-button
-        min-width: 925px
+        max-width: 925px
         display: flex
         justify-content: none
-        & a
+        position: relative
+        white-space: nowrap
+        & button
             background:#F0F4F580
             width: 280px
             height: 54px
             &:first-child   
-                margin-right: 0       
-        .line
-            height: 51px
-            border: 1px solid #D4DEE1
-            margin: 0 42px 0 82px
+                margin-right: 169px  
+            &:first-child::after
+                content: ""
+                position: absolute
+                left: 358px
+                height: 51px
+                border: 1px solid #D4DEE1
+    
+
+
+
+
 
             
     
